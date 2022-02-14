@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    display: flex;
+}
+
+.left-login{
+    width: 55%;
+}
+.left-login > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: -240px; */
+}
+
+.right-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    width: 40vw;
+    margin-left: 50px;
+}
+
+.right-login > h1{
+    position: relative;
+    bottom: 40px;
+    right: 3px;
+    font-weight:bold;
+    font-size: 1.8em;
+    color: #353755;
+    line-height: 56px;
+}
+
+
+.right-login > p {
+    position: relative;
+    bottom: 30px;
+    max-width: 95%;
+    font-size: 1.1em;
+    color: rgba(195, 197, 204, 1);
+    font-weight: 500;
+    line-height: 25px;
+}
+.line{
+
+    width: 50%;
+    height: 3px;
+    background: #353755;
+    border-radius: 5px;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.fields > i:nth-child(1){
+    position: relative;
+    top: 50px;
+    left: 15px;
+    width: 0px;
+}
+.fields > i:nth-last-child(1){
+    position: relative;
+    bottom: 46px;
+    left: 15px;
+    width: 0px;
+}
+
+
+.fields > input{
+    padding: 20px 0px 20px 60px;
+    border: 0.2em solid#B1B3BA;
+    width: 100%;
+    outline: none;
+}
+
+.fields > input::placeholder{
+    color:#B1B3BA ;
+    font-size: 1.2em;
+    font-weight:lighter;
+    margin-left: 100px;
+}
+
+a:nth-of-type(1){
+    color: #B1B3BA;
+    
+}
+.fields > input:nth-child(2){
+    border-radius: 8px 8px 0px 0px;
+    padding: 20px 61px;
+}
+
+.fields > input:nth-last-child(2){
+    border-radius: 0px 0px 8px 8px;
+    border-top: #fff;
+    
+}
+
+.login .remember ul{
+display: flex;
+gap: 120px;
+position: relative;
+bottom: 35px;
+left: 5px;
+color: #B1B3BA;
+}
+  #lembrar{
+      position: relative;
+  appearance: none;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #B1B3BA;
+  cursor: pointer;
+  transition: 0.2s;
+  }
+
+  #lembrar::before{
+      content: '';
+      height: 9px;
+      width: 9px;
+      border-radius: 50%;
+      background: #8AC5FC;
+  position: absolute;
+  bottom: 2px;
+  left: 1.2px;
+  opacity: 0;
+  transition: 0.2s;
+  }
+  #lembrar:checked::before{
+  opacity: 1;
+  }
+  .enter{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 50px;
+      margin-left: 10px;
+  }
+label{
+    cursor: pointer;
+    position: relative;
+    bottom: 1px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    padding: 18px 0px;
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 550;
+    letter-spacing: 2px;
+    color: rgba(84, 161, 232, 1);
+    cursor: pointer;
+    background: #FFFFFF;
+box-shadow: 0px 0px 20px #C5D5E8;
+transition: 0.3s;
+}
+button:hover{
+    transform: translateY(-5px) scale(1.02);
+}
+button:nth-of-type(1){
+background: linear-gradient(270deg, #3F9EF7 2.72%, #8AC5FC 100%);
+box-shadow: 0px 10px 19px rgba(152, 224, 255, 0.71);
+color: white;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    color: #B1B3BA;
+    gap: 20px;
+}
+.social > a{
+    color: #3F9EF7;
+}
